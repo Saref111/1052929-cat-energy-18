@@ -1,0 +1,7 @@
+.main-nav__list {
+  @include list-reset;
+}
+
+.main-nav__link {
+  @include fonts(20px, 700);
+}

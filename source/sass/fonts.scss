@@ -6,3 +6,12 @@
     font-weight: 400;
     font-style: normal;
 }
+
+@font-face {
+  font-family: "Oswald";
+  src: url("../fonts/oswaldmedium.woff2"),
+    url("../fonts/oswaldmedium.woff");
+    font-display: swap;
+    font-weight: 700;
+    font-style: normal;
+}
