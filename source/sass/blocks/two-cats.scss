@@ -1,0 +1,9 @@
+.two-cats__picture-list,
+.two-cats__control-list {
+  @include list-reset;
+}
+
+.two-cats__control-label {
+  @include fonts(16px);
+  text-transform: uppercase;
+}

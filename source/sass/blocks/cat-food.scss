@@ -1,3 +1,32 @@
 .cat-food__wrapper {
-  
+  background-image: url("../img/index-background-mobile@1x.jpg"),
+    linear-gradient($green 0px, $green 305px, #ffffff 305px);
+  background-repeat: no-repeat;
+  background-size: 320px 305px, contain;
+
+  @media (min-resolution: $retina-dppx) {
+    background-image: url("../img/index-background-mobile@2x.jpg"),
+      linear-gradient($green 0px, $green 305px, #ffffff 305px);
+    background-repeat: no-repeat;
+    background-size: 320px 305px, contain;
+  }
+}
+
+.cat-food__title {
+  @include fonts(36px, 400, #ffffff);
+  line-height: 36px;
+  text-transform: uppercase;
+}
+
+.cat-food__moto {
+  @include fonts(14px, 400, #ffffff);
+  line-height: 14px;
+  text-transform: uppercase;
+}
+
+.cat-food__link {
+  @include fonts(14px, 400, #ffffff);
+  line-height: 18px;
+  text-transform: uppercase;
+  background-color: $green;
 }

@@ -1,0 +1,20 @@
+.example__title {
+  @include fonts(36px, 400);
+}
+
+.example__text {
+  @include fonts(14px, 400, $gray4, "Arial");
+}
+
+.example__term {
+  @include fonts(12px, 400, $gray4, "Arial");
+  line-height: 12px;
+}
+
+.example__description {
+  @include fonts(24px);
+}
+
+.example__price {
+  @include fonts(14px);
+}

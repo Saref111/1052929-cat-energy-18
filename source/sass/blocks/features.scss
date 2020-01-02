@@ -1,0 +1,12 @@
+.features__title {
+  @include fonts(36px);
+}
+
+.features__list {
+  @include list-reset;
+}
+
+.features__description {
+  @include fonts(14px, 400, $gray4, "Arial");
+  line-height: 18px;
+}

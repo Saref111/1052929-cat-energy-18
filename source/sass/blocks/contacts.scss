@@ -1,0 +1,11 @@
+
+.contacts__text {
+  @include fonts(16px);
+  text-transform: uppercase;
+  line-height: 20px;
+}
+
+.contacts__address {
+  @include fonts(14px, 400, $gray4, "Arial");
+  font-style: normal;
+}

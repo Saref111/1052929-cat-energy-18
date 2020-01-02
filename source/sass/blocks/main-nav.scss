@@ -4,4 +4,5 @@
 
 .main-nav__link {
   @include fonts(20px, 700);
+  text-transform: uppercase;
 }
