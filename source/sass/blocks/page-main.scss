@@ -1,0 +1,9 @@
+.page-main__title {
+  @include fonts(36px);
+}
+
+.page-main__text {
+  @include fonts(14px);
+  line-height: 18px;
+  text-transform: uppercase;
+}

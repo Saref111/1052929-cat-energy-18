@@ -1,0 +1,21 @@
+.catalog__list {
+  @include list-reset;
+}
+
+.catalog__title-add {
+  @include fonts(16px);
+  text-transform: uppercase;
+  line-height: 20px;
+}
+
+.catalog__text-add {
+  @include fonts(12px, 400, #000000, "Arial");
+  line-height: 16px;
+}
+
+.catalog__link-add {
+  @include fonts(16px, 400, $gray4);
+  text-transform: uppercase;
+  line-height: 20px;
+  background-color: #f2f2f2;
+}

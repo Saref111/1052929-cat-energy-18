@@ -1,0 +1,19 @@
+.form__area legend {
+  @include fonts(24px);
+}
+
+.form__label {
+  @include fonts(16px);
+  line-height: 18px;
+  text-transform: uppercase;
+}
+
+.form__input::placeholder,
+.form__area textarea::placeholder {
+  @include fonts(16px, 400, $gray4);
+  text-transform: uppercase;
+}
+
+.form__note {
+  @include fonts(14px, 400, $gray4, "Arial");
+}

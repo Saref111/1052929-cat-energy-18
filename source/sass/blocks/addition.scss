@@ -1,0 +1,28 @@
+.addition__title {
+  @include fonts(24px);
+}
+
+.addition__list {
+  @include list-reset;
+}
+
+.addition__item-title {
+  @include fonts(16px, 400, #222222);
+  text-transform: uppercase;
+}
+
+.addition__item-info {
+  @include fonts(16px, 400, $gray4, "Arial");
+}
+
+.addition__item-link {
+  @include fonts(16px, 400, #ffffff);
+  text-transform: uppercase;
+  line-height: 20px;
+  background-color: $green;
+}
+
+.addition__bonus-text {
+  @include fonts(16px, 400, #ffffff, "Arial");
+  line-height: 20px;
+}

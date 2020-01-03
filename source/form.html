@@ -4,6 +4,7 @@
     <meta charset="utf-8">
     <meta name="viewport" content="width=device-width,initial-scale=1">
     <title>HTML Academy: Кэт энерджи</title>
+    <link rel="stylesheet" href="css/style.css">
   </head>
   <body>
     <header class="page-header">
@@ -58,9 +59,9 @@
           </fieldset>
           <fieldset class="form__area">
             <legend class="visually-hidden">Тип программы</legend>
-            <input type="radio" name="programm" id="slim" checked>
-            <input type="radio" name="programm" id="pro">
-            <input type="radio" name="programm" id="need-advice">
+            <input class="visually-hidden" type="radio" name="programm" id="slim" checked>
+            <input class="visually-hidden" type="radio" name="programm" id="pro">
+            <input class="visually-hidden" type="radio" name="programm" id="need-advice">
             <label for="slim" class="form__label">Похудение</label>
             <label for="pro" class="form__label">Набор массы</label>
             <label for="need-advice" class="form__label">Не знаю (нужен ваш совет)</label>
@@ -101,11 +102,11 @@
           </fieldset>
           <div class="form__button-wrapper">
               <p class="form__note">* — Обязательные поля</p>
-              <button type="submit" class="form__button">Отправить заявку</button>
+              <button type="submit" class="form__button green-button">Отправить заявку</button>
           </div>
         </div>
       </form>
-      <section class="contacts">
+      <section class="contacts contacts--gray">
         <div class="contacts__wrapper">
           <div class="contacts__info">
             <h2 class="visually-hidden">Контакты</h2>

@@ -1,0 +1,10 @@
+.catalog-card__title {
+  @include fonts(16px);
+  text-transform: uppercase;
+  line-height: 20px;
+}
+
+.catalog-card__info {
+  @include fonts(12px, 400, #000000, "Arial");
+  line-height: 16px;
+}
