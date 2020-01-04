@@ -1,8 +1,37 @@
+.main-nav__wrapper {
+  width: 100%;
+}
+
+.main-nav__logo-header {
+  position: relative;
+  height: 65px;
+  border-bottom: 1px solid #e6e6e6;
+}
+
+.main-nav__toggle {
+  position: absolute;
+  background-color: transparent;
+  border: none;
+}
+
 .main-nav__list {
   @include list-reset;
+  border-top: 1px solid #e6e6e6;
+}
+
+.main-nav__item {
+  display: block;
+  width: 100%;
+  border-bottom: 1px solid #e6e6e6;
+  padding-top: 20px;
+  padding-bottom: 21px;
 }
 
 .main-nav__link {
   @include fonts(20px, 700);
   text-transform: uppercase;
+  display: block;
+  width: 200px;
+  margin: 0 auto;
+  text-align: center;
 }
