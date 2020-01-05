@@ -3,30 +3,50 @@
     linear-gradient($green 0px, $green 305px, #ffffff 305px);
   background-repeat: no-repeat;
   background-size: 320px 305px, contain;
+  background-position: center 0;
 
   @media (min-resolution: $retina-dppx) {
     background-image: url("../img/index-background-mobile@2x.jpg"),
       linear-gradient($green 0px, $green 305px, #ffffff 305px);
     background-repeat: no-repeat;
     background-size: 320px 305px, contain;
+    background-position: 0 center;
   }
+
+  padding-top: 27px;
 }
 
 .cat-food__title {
   @include fonts(36px, 400, #ffffff);
   line-height: 36px;
-  text-transform: uppercase;
+  margin: 0 auto;
+  margin-bottom: 25px;
+  width: 260px;
+  text-align: center;
 }
 
 .cat-food__moto {
   @include fonts(14px, 400, #ffffff);
   line-height: 14px;
   text-transform: uppercase;
+  margin: 0 auto;
+  margin-bottom: 27px;
+  width: 260px;
+  text-align: center;
+}
+
+.cat-food__image-wrapper {
+  width: 280px;
+  height: 271px;
+  margin: 0 auto;
+  margin-bottom: 4px;
 }
 
 .cat-food__link {
-  @include fonts(14px, 400, #ffffff);
-  line-height: 18px;
-  text-transform: uppercase;
-  background-color: $green;
+  display: block;
+  margin-left: 6.25%;
+  margin-right: 6.25%;
+  padding-top: 8px;
+  padding-bottom: 9px;
+  text-align: center;
 }
