@@ -1,3 +1,9 @@
+.academy__copyright {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
 .academy__text {
   @include fonts(16px, 400, $gray4, "Arial");
 }

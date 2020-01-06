@@ -2,15 +2,35 @@
   &--gray {
     background-color: #f2f2f2;
   }
+
+  padding-top: 27px;
+}
+
+.contacts__info {
+  display: flex;
+  justify-content: space-between;
+  padding: 0 6%;
+  margin-bottom: 26px;
 }
 
 .contacts__text {
+  margin: 0;
   @include fonts(16px);
   text-transform: uppercase;
   line-height: 20px;
+  width: 50%;
 }
 
 .contacts__address {
   @include fonts(14px, 400, $gray4, "Arial");
   font-style: normal;
+  line-height: 20px;
+  width: 50%;
+}
+
+.contacts__map-wrapper iframe{
+  width: 100%;
+  border: none;
+  height: 362px;
+  margin-bottom: -6px;
 }
