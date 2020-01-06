@@ -1,13 +1,14 @@
 .example__wrapper {
   background-color: #f2f2f2;
   padding-top: 35px;
+  padding-bottom: 35px;
 }
 
 .example__title {
   @include fonts(36px, 400);
   margin: 0 auto;
   margin-bottom: 40px;
-  width: 87.5%;
+  width: 280px;
 }
 
 .example__text {
@@ -24,6 +25,7 @@
   justify-content: space-between;
   width: 280px;
   margin: 0 auto;
+  margin-bottom: 32px;
 }
 
 .example__term {
@@ -33,7 +35,7 @@
   width: 87px;
   padding: 0 10px;
   text-transform: lowercase;
-  background-color: #cfcfcf;
+  background-color: #f2f2f2;
   text-align: center;
   top: 47px;
 
@@ -60,4 +62,9 @@
 
 .example__price {
   @include fonts(14px);
+  text-transform: uppercase;
+  width: 200px;
+  margin: 0 auto;
+  margin-bottom: 32px;
+  text-align: center;
 }
