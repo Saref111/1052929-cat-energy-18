@@ -13,17 +13,49 @@
 .example__text {
   @include fonts(14px, 400, $gray4, "Arial");
   margin: 0 auto;
+  margin-bottom: 26px;
   width: 87%;
   line-height: 18px;
+}
+
+.example__info-list {
+  position: relative;
+  display: flex;
+  justify-content: space-between;
+  width: 280px;
+  margin: 0 auto;
 }
 
 .example__term {
   @include fonts(12px, 400, $gray4, "Arial");
   line-height: 12px;
+  position: absolute;
+  width: 87px;
+  padding: 0 10px;
+  text-transform: lowercase;
+  background-color: #cfcfcf;
+  text-align: center;
+  top: 47px;
+
+  &:nth-of-type(1) {
+    left: 6%;
+  }
+
+  &:nth-of-type(2) {
+    right: 6.5%;
+  }
 }
 
 .example__description {
   @include fonts(24px);
+  margin: 0;
+  width: 44.26%;
+  padding-top: 13px;
+  padding-bottom: 17px;
+  text-align: center;
+  text-transform: uppercase;
+  border: 1px solid #cfcfcf;
+  border-radius: 3px;
 }
 
 .example__price {
