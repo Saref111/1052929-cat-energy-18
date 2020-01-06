@@ -1,12 +1,101 @@
+.features__wrapper {
+  padding-top: 35px;
+  padding-bottom: 25px;
+}
+
 .features__title {
   @include fonts(36px);
+  width: 280px;
+  margin: 0 auto;
+  margin-bottom: 48px;
 }
 
 .features__list {
   @include list-reset;
+  width: 87.5%;
+  margin: 0 auto;
+}
+
+.features__item {
+  position: relative;
+
+  &:not(:last-child) {
+    margin-bottom: 26px;
+  }
+
+  &::before {
+    position: absolute;
+    content: "";
+    top: -2px;
+    left: 0;
+    width: 60px;
+    height: 60px;
+    background-color: $green-button;
+  }
+
+  &--leaf::before {
+    background-image: url("../img/advantage-leaf@1x.png"),
+      linear-gradient($green-button);
+    background-position: center;
+    background-size: 50px 50px;
+  }
+
+  &--dining::before {
+    background-image: url("../img/advantage-dining@1x.png"),
+      linear-gradient($green-button);
+    background-position: center;
+    background-size: 50px 50px;
+  }
+
+  &--powder::before {
+    background-image: url("../img/advantage-powder@1x.png"),
+      linear-gradient($green-button);
+    background-position: center;
+    background-size: 50px 50px;
+  }
+
+  &--clock::before {
+    background-image: url("../img/advantage-clock@1x.png"),
+      linear-gradient($green-button);
+    background-position: center;
+    background-size: 50px 50px;
+  }
+
+  @media (min-resolution: $retina-dppx) {
+    &--leaf::before {
+      background-image: url("../img/advantage-leaf@2x.png"),
+        linear-gradient($green-button);
+      background-position: center;
+      background-size: 50px 50px;
+    }
+
+    &--dining::before {
+      background-image: url("../img/advantage-dining@2x.png"),
+        linear-gradient($green-button);
+      background-position: center;
+      background-size: 50px 50px;
+    }
+
+    &--powder::before {
+      background-image: url("../img/advantage-powder@2x.png"),
+        linear-gradient($green-button);
+      background-position: center;
+      background-size: 50px 50px;
+    }
+
+    &--clock::before {
+      background-image: url("../img/advantage-clock@2x.png"),
+        linear-gradient($green-button);
+      background-position: center;
+      background-size: 50px 50px;
+    }
+  }
 }
 
 .features__description {
   @include fonts(14px, 400, $gray4, "Arial");
   line-height: 18px;
+  margin: 0;
+  margin-left: 80px;
+
 }

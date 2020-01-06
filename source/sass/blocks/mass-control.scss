@@ -32,6 +32,8 @@
 
 .mass-control__icon {
   position: absolute;
+  width: 0; //temporary
+  height: 0; //temporary
 }
 
 .mass-control__title {
@@ -59,5 +61,7 @@
 
   & svg {
     position: absolute;
+    width: 0; //temporary
+    height: 0; //temporary
   }
 }
