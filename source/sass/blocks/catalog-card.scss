@@ -42,6 +42,10 @@
 
 .catalog-card__description {
   text-align-last: right;
+
+  &:last-child {
+    text-transform: uppercase;
+  }
 }
 
 .catalog-card__link {
