@@ -1,5 +1,14 @@
 .catalog__list {
   @include list-reset;
+  border-top: 1px solid #ededed;
+}
+
+.catalog__item {
+  margin: 0 auto;
+  width: 100%;
+  border: 1px solid #ededed;
+  border-top: none;
+  padding-bottom: 24px;
 }
 
 .catalog__title-add {
