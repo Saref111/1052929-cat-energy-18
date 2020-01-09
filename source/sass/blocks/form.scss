@@ -2,6 +2,10 @@
   display: block;
 }
 
+.form__wrapper {
+  padding-bottom: 30px;
+}
+
 .form__area {
   border: none;
   margin: 0 auto;
@@ -39,6 +43,14 @@
   &[for="weight"] {
     margin-right: 5.5%;
   }
+
+  &[for="email"] {
+    margin-right: 4%;
+  }
+
+  &[for="phone"] {
+    margin-right: 3.5%;
+  }
 }
 
 .form__input {
@@ -57,6 +69,12 @@
   &--age {
     padding-top: 8px;
     padding-left: 15px;
+  }
+
+  &--comment {
+    width: 100%;
+    padding-right: 10px;
+    height: 150px;
   }
 }
 
@@ -79,6 +97,67 @@
   }
 }
 
+.form__area-wrapper {
+  padding-top: 27px;
+
+  &--addition {
+    padding-top: 4px;
+  }
+}
+
+.form__legend {
+  display: block;
+  width: 280px;
+  margin: 0 auto;
+  padding: 0;
+  margin-bottom: 25px;
+
+  &--comment {
+    padding-top: 4px;
+    margin-bottom: 35px;
+  }
+
+  &--addition {
+    margin-bottom: 0;
+  }
+}
+
+.form__icon {
+  position: absolute; //temporary
+  width: 0;
+  height: 0;
+}
+
+.form__addition-list {
+  @include list-reset;
+  padding-top: 37px;
+  padding-left: 45px;
+  padding-bottom: 17px;
+}
+
+.form__addition-list-item {
+  &:not(:last-child) {
+    margin-bottom: 19px;
+  }
+}
+
+.form__button-wrapper {
+  width: 87.5%;
+  margin: 0 auto;
+}
+
+.form__button {
+  display: block;
+  border: none;
+  width: 100%;
+  padding-top: 8px;
+  padding-bottom: 8px;
+  margin-bottom: 16px;
+}
+
 .form__note {
   @include fonts(14px, 400, $gray4, "Arial");
+  margin: 0 auto;
+  width: 160px;
+  text-align: center;
 }
