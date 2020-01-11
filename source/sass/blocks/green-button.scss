@@ -7,3 +7,15 @@
     @include fonts(14px, 400, #ffffff);
   }
 }
+
+@media (min-width: $tablet) {
+  .green-button {
+    @include fonts(22px, 400, #ffffff);
+    text-transform: uppercase;
+    background-color: $green-button;
+
+    &--program {
+      @include fonts(20px, 400, #ffffff);
+    }
+  }
+}
