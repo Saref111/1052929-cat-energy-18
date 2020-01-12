@@ -13,6 +13,7 @@
 .features__list {
   @include list-reset;
   width: 87.5%;
+  max-width: 500px;
   margin: 0 auto;
 }
 
@@ -31,63 +32,50 @@
     width: 60px;
     height: 60px;
     background-color: $green-button;
+    background-position: center;
+    background-size: 50px 50px;
+    background-repeat: no-repeat;
   }
 
   &--leaf::before {
     background-image: url("../img/advantage-leaf@1x.png"),
       linear-gradient($green-button);
-    background-position: center;
-    background-size: 50px 50px;
   }
 
   &--dining::before {
     background-image: url("../img/advantage-dining@1x.png"),
       linear-gradient($green-button);
-    background-position: center;
-    background-size: 50px 50px;
   }
 
   &--powder::before {
     background-image: url("../img/advantage-powder@1x.png"),
       linear-gradient($green-button);
-    background-position: center;
-    background-size: 50px 50px;
   }
 
   &--clock::before {
     background-image: url("../img/advantage-clock@1x.png"),
       linear-gradient($green-button);
-    background-position: center;
-    background-size: 50px 50px;
   }
 
   @media (min-resolution: $retina-dppx) {
     &--leaf::before {
       background-image: url("../img/advantage-leaf@2x.png"),
         linear-gradient($green-button);
-      background-position: center;
-      background-size: 50px 50px;
     }
 
     &--dining::before {
       background-image: url("../img/advantage-dining@2x.png"),
         linear-gradient($green-button);
-      background-position: center;
-      background-size: 50px 50px;
     }
 
     &--powder::before {
       background-image: url("../img/advantage-powder@2x.png"),
         linear-gradient($green-button);
-      background-position: center;
-      background-size: 50px 50px;
     }
 
     &--clock::before {
       background-image: url("../img/advantage-clock@2x.png"),
         linear-gradient($green-button);
-      background-position: center;
-      background-size: 50px 50px;
     }
   }
 }
@@ -97,5 +85,83 @@
   line-height: 18px;
   margin: 0;
   margin-left: 80px;
+}
 
+@media (min-width: $tablet) {
+  .features__wrapper {
+    padding-top: 47px;
+    width: 92.18%;
+    max-width: 850px;
+    margin: 0 auto;
+  }
+
+  .features__title {
+    @include fonts(60px);
+    line-height: 60px;
+    width: 100%;
+    margin: 0 auto;
+    margin-bottom: 72px;
+  }
+
+  .features__list {
+    width: 100%;
+    max-width: none;
+    display: flex;
+    justify-content: space-between;
+    flex-wrap: wrap;
+  }
+
+  .features__item {
+    width: 324px;
+    padding-top: 111px;
+    padding-bottom: 109px;
+
+    &:last-child,
+    &:nth-last-child(2) {
+      margin-bottom: 0;
+      padding-bottom: 55px;
+    }
+
+    &::before {
+      top: 0;
+      left: 0;
+      width: 80px;
+      height: 80px;
+    }
+
+    &::after {
+      position: absolute;
+      @include fonts(281px, 400, #f2f2f2);
+      top: 90px;
+      right: 75px;
+      z-index: 1;
+    }
+
+    &:nth-child(1)::after {
+      content: "1";
+      right: 95px;
+    }
+
+    &:nth-child(2)::after {
+      content: "2";
+      right: 80px;
+    }
+
+    &:nth-child(3)::after {
+      content: "3";
+    }
+
+    &:nth-child(4)::after {
+      content: "4";
+    }
+  }
+
+  .features__description {
+    @include fonts(16px, 400, $gray4, "Arial");
+    line-height: 24px;
+    width: 250px;
+    margin: 0;
+    position: relative;
+    z-index: 2;
+  }
 }
