@@ -130,8 +130,8 @@
     }
 
     &::after {
-      position: absolute;
       @include fonts(281px, 400, #f2f2f2);
+      position: absolute;
       top: 90px;
       right: 75px;
       z-index: 1;

@@ -48,8 +48,8 @@
 }
 
 .catalog__link-add {
-  display: block;
   @include fonts(16px, 400, $gray4);
+  display: block;
   text-transform: uppercase;
   text-align: center;
   line-height: 20px;

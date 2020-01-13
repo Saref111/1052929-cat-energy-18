@@ -14,8 +14,8 @@
 }
 
 .contacts__text {
-  margin: 0;
   @include fonts(16px);
+  margin: 0;
   text-transform: uppercase;
   line-height: 20px;
   width: 50%;
@@ -28,7 +28,7 @@
   width: 50%;
 }
 
-.contacts__map-wrapper iframe{
+.contacts__map-wrapper iframe {
   width: 100%;
   border: none;
   height: 362px;

@@ -5,7 +5,7 @@
 }
 
 @mixin fonts($size: 14px, $weight: 400, $color: #000000, $name: "Oswald") {
-  font-family: $name, Arial, sans-serif;
+  font-family: $name, "Arial", sans-serif;
   font-size: $size;
   font-weight: $weight;
   color: $color;

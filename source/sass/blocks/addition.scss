@@ -63,19 +63,14 @@
 }
 
 .addition__item-link {
+  @include fonts(16px, 400, #ffffff);
   display: block;
   padding-top: 10px;
   padding-bottom: 10px;
-  @include fonts(16px, 400, #ffffff);
   text-transform: uppercase;
   text-align: center;
   line-height: 20px;
   background-color: $green;
-}
-
-.addition__bonus-text {
-  @include fonts(16px, 400, #ffffff, "Arial");
-  line-height: 20px;
 }
 
 .addition__bonus {
@@ -106,6 +101,8 @@
 }
 
 .addition__bonus-text {
+  @include fonts(16px, 400, #ffffff, "Arial");
+  line-height: 20px;
   margin: 0 auto;
   width: 57.14%;
   text-align: center;

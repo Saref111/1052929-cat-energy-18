@@ -1,13 +1,13 @@
 .cat-food__wrapper {
   background-image: url("../img/index-background-mobile@1x.jpg"),
-    linear-gradient($green 0px, $green 305px, #ffffff 305px);
+    linear-gradient($green 0, $green 305px, #ffffff 305px);
   background-repeat: no-repeat;
   background-size: 320px 305px, contain;
   background-position: center 0;
 
   @media (min-resolution: $retina-dppx) {
     background-image: url("../img/index-background-mobile@2x.jpg"),
-      linear-gradient($green 0px, $green 305px, #ffffff 305px);
+      linear-gradient($green 0, $green 305px, #ffffff 305px);
     background-repeat: no-repeat;
     background-size: 320px 305px, contain;
     background-position: 0 center;

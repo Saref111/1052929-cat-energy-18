@@ -69,9 +69,9 @@
   }
 
   .main-nav__link {
+    @include fonts(18px, 400);
     width: auto;
     margin: 0;
-    @include fonts(18px, 400);
     white-space: nowrap;
 
     &--current {
