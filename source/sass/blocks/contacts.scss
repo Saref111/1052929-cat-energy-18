@@ -34,3 +34,37 @@
   height: 362px;
   margin-bottom: -6px;
 }
+
+@media (min-width: $tablet) {
+  .contacts {
+    padding-top: 63px;
+  }
+
+  .contacts__info {
+    padding: 0 9.11%;
+    padding-bottom: 33px;
+  }
+
+  .contacts__text {
+    @include fonts(20px);
+    line-height: 25px;
+    width: 30%;
+  }
+
+  .contacts__address {
+    @include fonts(16px, 400, $gray4, "Arial");
+    line-height: 18px;
+    padding-right: 1px;
+    width: 30%;
+    text-align: right;
+
+    & .oneline {
+      display: block;
+      margin-bottom: 22px;
+    }
+  }
+
+  .contacts__map-wrapper iframe {
+    height: 396px;
+  }
+}

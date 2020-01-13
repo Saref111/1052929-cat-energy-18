@@ -20,3 +20,34 @@
   padding-left: 6.25%;
   padding-right: 4.3%;
 }
+
+@media (min-width: $tablet) {
+  .page-footer {
+    padding-top: 0;
+  }
+
+  .page-footer__wrapper {
+    display: flex;
+    justify-content: space-between;
+    padding: 0;
+    padding-left: 3.9%;
+    padding-right: 3%;
+    padding-top: 45px;
+    padding-bottom: 29px;
+  }
+
+  .page-footer__logo {
+    margin: 0;
+    margin-top: 20px;
+  }
+
+  .page-footer__social-list {
+    min-height: 64px;
+    margin: 0;
+  }
+
+  .page-footer__academy {
+    min-height: 78px;
+    padding: 0;
+  }
+}

@@ -124,3 +124,109 @@ input#after:checked ~ .two-cats__control .two-cats__control-item {
 .two-cats__control-range {
   display: none;
 }
+
+@media (min-width: $tablet) {
+  .two-cats__control {
+    position: relative;
+  }
+
+  .two-cats input {
+    display: none;
+  }
+
+  .two-cats__picture-list {
+    width: 708px;
+    height: 517px;
+    margin: 0 auto;
+    margin-bottom: 16px;
+    display: flex;
+  }
+
+  .two-cats__item {
+    width: 50%;
+    height: 517px;
+    overflow: hidden;
+
+    &:nth-child(1) {
+      top: 0;
+      left: 15px;
+
+      & img {
+        top: 0;
+        left: 0;
+      }
+    }
+
+    &:nth-child(2) {
+      width: 50%;
+      top: 0;
+      left: unset;
+      right: 0;
+
+      & img {
+        top: 0;
+        right: 0;
+      }
+    }
+
+    & img {
+      width: 690px;
+      position: absolute;
+    }
+  }
+
+  .two-cats__control-list {
+    width: 571px;
+    padding: 0;
+    padding-right: 1px;
+    justify-content: space-between;
+  }
+
+  .two-cats__control-item {
+    width: auto;
+
+    &:nth-child(1) .two-cats__control-label::before {
+      width: 0;
+      height: 0;
+      border: none;
+    }
+
+    &:nth-child(2) .two-cats__control-label::after {
+      width: 0;
+      height: 0;
+      border: none;
+    }
+
+    &:nth-child(2) .two-cats__control-label::before {
+      width: 0;
+      height: 0;
+      border: none;
+    }
+
+    &:nth-child(1) .two-cats__control-label::after {
+      width: 0;
+      height: 0;
+      border: none;
+    }
+  }
+
+  .two-cats__control-label {
+    @include fonts(20px);
+    width: auto;
+    display: block;
+    border-bottom: 1px dotted #bebebe;
+    padding-bottom: 3px;
+  }
+
+  .two-cats__control-range {
+    display: block;
+    position: absolute;
+    width: 428px;
+    height: 6px;
+    border-radius: 25px;
+    background-color: #dcdcdc;
+    top: 9px;
+    right: 50%;
+    transform: translateX(50%);
+  }
+}
