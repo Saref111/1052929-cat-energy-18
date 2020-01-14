@@ -53,7 +53,8 @@
   margin: 0;
   margin-bottom: 10px;
 
-  & * {
+  & dd,
+  & dt {
     margin: 0;
   }
 
