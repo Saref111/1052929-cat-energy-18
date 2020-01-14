@@ -59,3 +59,31 @@
   padding-top: 10px;
   padding-bottom: 10px;
 }
+
+@media (min-width: $tablet) {
+  .catalog__list {
+    display: flex;
+    flex-wrap: wrap;
+    margin: 0 3.9%;
+    border: none;
+  }
+
+  .catalog__item {
+    width: 324px;
+    margin: 0;
+    border: none;
+
+    &:nth-child(odd) {
+      margin-right: 30px;
+    }
+
+    &:nth-child(even) {
+      margin-left: 30px;
+    }
+
+    &:not(:last-child),
+    &:not(:nth-last-child(2)) {
+      margin-bottom: 36px;
+    }
+  }
+}
