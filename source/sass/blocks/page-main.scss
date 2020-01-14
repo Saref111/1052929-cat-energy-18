@@ -1,0 +1,19 @@
+
+.page-main__title {
+  @include fonts(36px);
+  line-height: 60px;
+  width: 280px;
+  margin: 0 auto;
+  padding-top: 15px;
+  margin-bottom: 28px;
+}
+
+.page-main__text {
+  @include fonts(14px);
+  line-height: 16px;
+  text-transform: uppercase;
+  width: 280px;
+  margin: 0 auto;
+  margin-bottom: 30px;
+  padding-right: 30px;
+}

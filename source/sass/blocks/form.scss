@@ -1,0 +1,164 @@
+.form {
+  display: block;
+}
+
+.form__wrapper {
+  padding-bottom: 30px;
+}
+
+.form__area {
+  border: none;
+  margin: 0 auto;
+  width: 87.5%;
+  padding: 0;
+  padding-bottom: 19px;
+
+  &--gray-border {
+    border: 1px solid #e6e6e6;
+    margin: 0;
+    padding-left: 6.25%;
+    padding-right: 6.25%;
+    width: 100%;
+  }
+}
+
+.form__item {
+  margin: 0;
+  margin-bottom: 4px;
+  display: flex;
+  padding-top: 10px;
+}
+
+.form__area legend {
+  @include fonts(24px);
+}
+
+.form__label {
+  @include fonts(16px);
+  line-height: 18px;
+  text-transform: uppercase;
+  margin-top: 12px;
+  margin-right: 5%;
+
+  &[for="weight"] {
+    margin-right: 5.5%;
+  }
+
+  &[for="email"] {
+    margin-right: 4%;
+  }
+
+  &[for="phone"] {
+    margin-right: 3.5%;
+  }
+}
+
+.form__input {
+  flex-grow: 1;
+  border: 1px solid #e6e6e6;
+  padding-top: 9px;
+  padding-left: 14px;
+  padding-bottom: 10px;
+
+  @include fonts(16px, 400, $gray4);
+
+  &--weight {
+    padding-bottom: 11px;
+    padding-left: 15px;
+  }
+
+  &--age {
+    padding-top: 8px;
+    padding-left: 15px;
+  }
+
+  &--comment {
+    width: 100%;
+    padding-right: 10px;
+    height: 150px;
+  }
+}
+
+.form__input::placeholder,
+.form__area textarea::placeholder {
+  @include fonts(16px, 400, $gray4);
+  text-transform: uppercase;
+}
+
+.form__program-list {
+  @include list-reset;
+  padding-top: 23px;
+  padding-left: 45px;
+  padding-bottom: 4px;
+}
+
+.form__program-list-item {
+  &:not(:last-child) {
+    margin-bottom: 19px;
+  }
+}
+
+.form__area-wrapper {
+  padding-top: 27px;
+
+  &--addition {
+    padding-top: 4px;
+  }
+}
+
+.form__legend {
+  display: block;
+  width: 280px;
+  margin: 0 auto;
+  padding: 0;
+  margin-bottom: 25px;
+
+  &--comment {
+    padding-top: 4px;
+    margin-bottom: 35px;
+  }
+
+  &--addition {
+    margin-bottom: 0;
+  }
+}
+
+.form__icon {
+  position: absolute; //temporary
+  width: 0;
+  height: 0;
+}
+
+.form__addition-list {
+  @include list-reset;
+  padding-top: 37px;
+  padding-left: 45px;
+  padding-bottom: 17px;
+}
+
+.form__addition-list-item {
+  &:not(:last-child) {
+    margin-bottom: 19px;
+  }
+}
+
+.form__button-wrapper {
+  width: 87.5%;
+  margin: 0 auto;
+}
+
+.form__button {
+  display: block;
+  border: none;
+  width: 100%;
+  padding-top: 8px;
+  padding-bottom: 8px;
+  margin-bottom: 16px;
+}
+
+.form__note {
+  @include fonts(14px, 400, $gray4, "Arial");
+  margin: 0 auto;
+  width: 160px;
+  text-align: center;
+}

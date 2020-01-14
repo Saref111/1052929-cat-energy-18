@@ -1,0 +1,25 @@
+.logo-header__wrapper {
+  width: 320px;
+  margin: 0 auto;
+  padding-top: 13px;
+}
+
+.logo-header__link {
+  display: block;
+  width: 190px;
+  height: 38px;
+  margin-left: 6.4%;
+}
+
+@media (min-width: $tablet) {
+  .logo-header__wrapper {
+    width: 174px;
+    margin: 0;
+    padding-top: 23px;
+  }
+
+  .logo-header__link {
+    width: auto;
+    margin: 0;
+  }
+}

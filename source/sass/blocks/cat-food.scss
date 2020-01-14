@@ -1,0 +1,109 @@
+.cat-food__wrapper {
+  background-image: url("../img/index-background-mobile@1x.jpg"),
+    linear-gradient($green 0, $green 305px, #ffffff 305px);
+  background-repeat: no-repeat;
+  background-size: 320px 305px, contain;
+  background-position: center 0;
+
+  @media (min-resolution: $retina-dppx) {
+    background-image: url("../img/index-background-mobile@2x.jpg"),
+      linear-gradient($green 0, $green 305px, #ffffff 305px);
+    background-repeat: no-repeat;
+    background-size: 320px 305px, contain;
+    background-position: 0 center;
+  }
+
+  padding-top: 27px;
+}
+
+.cat-food__title {
+  @include fonts(36px, 400, #ffffff);
+  line-height: 36px;
+  margin: 0 auto;
+  margin-bottom: 25px;
+  width: 260px;
+  text-align: center;
+}
+
+.cat-food__moto {
+  @include fonts(14px, 400, #ffffff);
+  line-height: 14px;
+  text-transform: uppercase;
+  margin: 0 auto;
+  margin-bottom: 27px;
+  width: 260px;
+  text-align: center;
+}
+
+.cat-food__image-wrapper {
+  width: 280px;
+  height: 271px;
+  margin: 0 auto;
+  margin-bottom: 4px;
+}
+
+.cat-food__link {
+  display: block;
+  margin-left: 6.25%;
+  margin-right: 6.25%;
+  margin-bottom: 11px;
+  padding-top: 8px;
+  padding-bottom: 9px;
+  text-align: center;
+}
+
+@media (min-width: $tablet) {
+  .cat-food__wrapper {
+    background-image: none;
+    display: flex;
+    flex-direction: column;
+    width: 708px;
+    margin: 0 auto;
+    padding-left: 88px;
+    padding-top: 58px;
+    padding-bottom: 1px;
+  }
+
+  .cat-food__title {
+    @include fonts(60px, 400);
+    line-height: 60px;
+    margin: 0;
+    margin-bottom: 41px;
+    width: 427px;
+    text-align: left;
+    order: 1;
+  }
+
+  .cat-food__moto {
+    @include fonts(20px, 400);
+    line-height: 20px;
+    text-transform: uppercase;
+    margin: 0;
+    margin-bottom: 48px;
+    width: 295px;
+    text-align: left;
+    order: 2;
+  }
+
+  .cat-food__image-wrapper {
+    width: 709px;
+    height: 609px;
+    margin: 0;
+    margin-left: -88px;
+    margin-top: -80px;
+    order: 4;
+  }
+
+  .cat-food__link {
+    display: block;
+    margin: 0;
+    margin-left: 1px;
+    width: 245px;
+    padding-top: 13px;
+    padding-bottom: 14px;
+    text-align: center;
+    order: 3;
+    position: relative;
+    z-index: 2;
+  }
+}

@@ -1,0 +1,56 @@
+.catalog-card {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-between;
+  margin-left: 6.25%;
+  margin-right: 6.25%;
+}
+
+.catalog-card__image-wrapper {
+  width: 138px;
+  height: 144px;
+}
+
+.catalog-card__info-wrapper {
+  padding-top: 20px;
+  width: 140px;
+}
+
+.catalog-card__title {
+  @include fonts(16px);
+  margin: 0;
+  margin-bottom: 14px;
+  width: 75px;
+  text-transform: uppercase;
+  line-height: 20px;
+}
+
+.catalog-card__info {
+  @include fonts(12px, 400, #000000, "Arial");
+  line-height: 16px;
+  margin: 0;
+  display: flex;
+  flex-wrap: wrap;
+  width: 140px;
+}
+
+.catalog-card__term,
+.catalog-card__description {
+  margin: 0;
+  width: 50%;
+}
+
+.catalog-card__description {
+  text-align-last: right;
+
+  &:last-child {
+    text-transform: uppercase;
+  }
+}
+
+.catalog-card__link {
+  width: 100%;
+  text-align: center;
+  padding-top: 8px;
+  padding-bottom: 8px;
+}

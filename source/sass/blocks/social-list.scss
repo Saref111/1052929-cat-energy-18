@@ -1,0 +1,11 @@
+.social-list {
+  @include list-reset;
+  border-top: 1px solid #d9d9d9;
+  border-bottom: 1px solid #d9d9d9;
+}
+
+.social-list svg {
+  position: absolute;
+  width: 0; //temporary
+  height: 0; //temporary
+}
