@@ -17,5 +17,9 @@
     &--program {
       @include fonts(20px, 400, #ffffff);
     }
+
+    &--form {
+      font-size: 20px;
+    }
   }
 }

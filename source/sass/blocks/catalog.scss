@@ -61,6 +61,10 @@
 }
 
 @media (min-width: $tablet) {
+  .catalog__wrapper {
+    padding-top: 29px;
+  }
+
   .catalog__list {
     display: flex;
     flex-wrap: wrap;
