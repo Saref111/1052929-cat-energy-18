@@ -96,6 +96,8 @@
 
 @media (min-width: $desktop) {
   .main-nav__wrapper {
+    position: relative;
+    z-index: 2;
     padding: 0 7.64%;
     padding-top: 30px;
     min-width: 1440px;
