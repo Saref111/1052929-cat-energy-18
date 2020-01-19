@@ -241,9 +241,10 @@ input[name="two-cats"]:nth-of-type(2):checked ~ .two-cats__control .two-cats__co
 @media (min-width: $desktop) {
   .two-cats {
     padding-bottom: 0;
-    width: 707px;
+    width: auto;
     margin-top: 152px;
-    background-image: linear-gradient(to left, #f2f2f2 0, #f2f2f2 285px, #eaeaea 285px, #eaeaea 100%);
+    padding-right: 110px;
+    background-image: linear-gradient(to right, #f2f2f2 0, #f2f2f2 422px, #eaeaea 422px, #eaeaea 100%);
   }
 
   .two-cats__picture-list {

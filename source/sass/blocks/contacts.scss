@@ -68,3 +68,43 @@
     height: 396px;
   }
 }
+
+@media (min-width: $desktop) {
+  .contacts {
+    padding: 0;
+  }
+
+  .contacts__wrapper {
+    position: relative;
+  }
+
+  .contacts__info {
+    position: absolute;
+    margin: 0;
+    top: 96px;
+    left: 27.35%;
+    transform: translateX(-50%);
+    width: 570px;
+    padding: 0 77px;
+    padding-right: 30px;
+    padding-top: 65px;
+    padding-bottom: 59px;
+    background-color: #ffffff;
+  }
+
+  .contacts__text {
+    @include fonts(20px);
+    line-height: 25px;
+    width: 50%;
+  }
+
+  .contacts__address {
+    width: 50%;
+    text-align: left;
+    padding-left: 4%;
+  }
+
+  .contacts__map-wrapper iframe {
+    height: 400px;
+  }
+}
