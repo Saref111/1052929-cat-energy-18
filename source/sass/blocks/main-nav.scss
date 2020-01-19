@@ -116,7 +116,7 @@
 
   .main-nav__link {
     font-size: 20px;
-    color: #ffffff;
+
 
     &--current {
       position: relative;
@@ -124,11 +124,25 @@
       &::after {
         position: absolute;
         content: "";
-        width: 97%;
+        width: 99%;
         height: 2px;
-        background-color: #ffffff;
-        left: 1px;
+        background-color: $green-button;
+        left: 2px;
         bottom: -10px;
+      }
+
+      &--white {
+        color: #ffffff;
+
+        &::after {
+          position: absolute;
+          content: "";
+          width: 97%;
+          height: 2px;
+          background-color: #ffffff;
+          left: 1px;
+          bottom: -10px;
+        }
       }
     }
   }
