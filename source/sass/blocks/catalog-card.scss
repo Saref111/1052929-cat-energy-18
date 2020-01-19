@@ -114,7 +114,26 @@
 
   .catalog-card__link {
     display: block;
-    width: 249px;
+    width: 100%;
+    margin-left: 38px;
+    margin-right: 37px;
+  }
+}
+
+@media (min-width: $desktop) {
+  .catalog-card__image-wrapper {
+    width: 245px;
+    height: 208px;
+
+    &--small {
+      margin-top: 34px;
+      height: 174px;
+    }
+  }
+
+  .catalog-card__link {
+    display: block;
+    width: 169px;
     margin-left: 38px;
     margin-right: 37px;
   }

@@ -36,3 +36,12 @@
     margin-bottom: 56px;
   }
 }
+
+@media (min-width: $tablet) {
+  .page-main__title {
+    line-height: 60px;
+    width: 1220px;
+    margin: 0 auto;
+    padding-top: 75px;
+  }
+}
