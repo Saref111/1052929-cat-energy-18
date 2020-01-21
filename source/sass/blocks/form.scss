@@ -309,3 +309,134 @@
     padding-top: 14px;
   }
 }
+
+@media (min-width: $desktop) {
+  .form__wrapper {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
+    margin: 0 4.86%;
+    padding-bottom: 81px;
+  }
+
+  .form__area {
+    width: auto;
+    min-width: 43.8%;
+    margin-left: 40px;
+    margin-right: 40px;
+    padding-bottom: 0;
+
+    &--gray-border {
+      margin: 0 40px;
+      padding: 0;
+      margin-top: 10px;
+    }
+
+    &:nth-child(3),
+    &:nth-child(4) {
+      width: 100%;
+    }
+  }
+
+  .form__label {
+    margin-right: 3.1%;
+
+    &[for="weight"] {
+      margin-right: 3.6%;
+    }
+
+    &[for="email"] {
+      margin-right: 4%;
+    }
+
+    &[for="phone"] {
+      margin-right: 3.2%;
+    }
+  }
+
+  .form__item {
+    &:last-child {
+      margin-bottom: 0;
+    }
+
+    &--contacts {
+      min-width: 46.8%;
+      margin-bottom: 0;
+    }
+  }
+
+  .form__program-list {
+    padding: 0;
+    padding-top: 34px;
+    padding-left: 85px;
+  }
+
+  .form__area-wrapper {
+    padding-top: 70px;
+    padding-bottom: 68px;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
+
+    &--addition {
+      padding-top: 60px;
+      padding-bottom: 67px;
+    }
+  }
+
+  .form__legend {
+    width: 1220px;
+    margin-left: auto;
+    margin-right: auto;
+
+    &--addition {
+      margin-bottom: 67px;
+    }
+  }
+
+  .form__input[type="tel"] {
+    padding-top: 0;
+    padding-bottom: 0;
+  }
+
+  .form__checkbox-wrapper {
+    width: 100%;
+  }
+
+  .form__addition-list {
+    padding: 0;
+    padding-left: 58px;
+  }
+
+  .form__addition-list-item {
+    width: 187px;
+    margin: 0;
+
+    &:not(:last-child) {
+      margin-bottom: 0;
+    }
+  }
+
+  .form__button-wrapper {
+    width: 100%;
+    margin: 0;
+    margin-left: 40px;
+    justify-content: space-between;
+  }
+
+  .form__button {
+    width: 45.24%;
+    padding-left: 210px;
+    padding-right: 205px;
+    padding-bottom: 11px;
+  }
+
+  .form__note {
+    display: block;
+    padding: 0;
+    padding-top: 12px;
+    width: 42%;
+    text-align: left;
+    margin-right: auto;
+  }
+}
