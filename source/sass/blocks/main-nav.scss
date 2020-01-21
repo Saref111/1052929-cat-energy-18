@@ -46,6 +46,10 @@
     min-width: 768px;
   }
 
+  .main-nav__logo-header {
+    border: none;
+  }
+
   .main-nav__toggle {
     display: none;
   }
@@ -85,6 +89,60 @@
         background-color: $green-button;
         left: 0;
         bottom: -9px;
+      }
+    }
+  }
+}
+
+@media (min-width: $desktop) {
+  .main-nav__wrapper {
+    position: relative;
+    z-index: 2;
+    padding: 0 7.64%;
+    padding-top: 30px;
+    min-width: 1440px;
+  }
+
+  .main-nav__list {
+    min-width: 479px;
+    padding-top: 43px;
+  }
+
+  .main-nav__item {
+    &:not(:last-child) {
+      margin-right: 7.2%;
+    }
+  }
+
+  .main-nav__link {
+    font-size: 20px;
+
+
+    &--current {
+      position: relative;
+
+      &::after {
+        position: absolute;
+        content: "";
+        width: 99%;
+        height: 2px;
+        background-color: $green-button;
+        left: 2px;
+        bottom: -10px;
+      }
+
+      &--white {
+        color: #ffffff;
+
+        &::after {
+          position: absolute;
+          content: "";
+          width: 97%;
+          height: 2px;
+          background-color: #ffffff;
+          left: 1px;
+          bottom: -10px;
+        }
       }
     }
   }

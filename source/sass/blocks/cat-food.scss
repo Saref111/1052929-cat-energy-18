@@ -107,3 +107,51 @@
     z-index: 2;
   }
 }
+
+@media (min-width: $desktop) {
+  .cat-food {
+    margin-top: -112px;
+    background-image: linear-gradient(to right, #ffffff 0, #ffffff 50%, $green-button 50%, $green-button 100%);
+  }
+
+  .cat-food__wrapper {
+    width: 1440px;
+    height: 696px;
+    flex-wrap: wrap;
+    margin: 0 auto;
+    padding-left: 190px;
+    padding-top: 221px;
+    background-image: url("../../img/index-background-desktop@1x.jpg");
+    background-repeat: no-repeat;
+    background-size: 720px 696px;
+    background-position: 100% 0;
+
+    @media (min-resolution: $retina-dppx) {
+      background-image: url("../img/index-background-desktop@2x.jpg");
+      background-repeat: no-repeat;
+      background-size: 720px 696px;
+      background-position: 100% 0;
+    }
+  }
+
+  .cat-food__title {
+    margin-bottom: 42px;
+  }
+
+  .cat-food__moto {
+    margin-bottom: 53px;
+  }
+
+  .cat-food__image-wrapper {
+    width: 552px;
+    height: 499px;
+    margin: 0;
+    margin-left: -383px;
+    margin-top: -80px;
+    order: 4;
+  }
+
+  .cat-food__link {
+    padding-right: 4px;
+  }
+}

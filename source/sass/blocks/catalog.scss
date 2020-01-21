@@ -59,3 +59,137 @@
   padding-top: 10px;
   padding-bottom: 10px;
 }
+
+@media (min-width: $tablet) {
+  .catalog__wrapper {
+    padding-top: 29px;
+  }
+
+  .catalog__list {
+    display: flex;
+    flex-wrap: wrap;
+    margin: 0 auto;
+    width: 768px;
+    border: none;
+    padding-bottom: 50px;
+  }
+
+  .catalog__item {
+    width: 324px;
+    margin: 0 30px;
+    border: none;
+    padding-bottom: 0;
+    margin-bottom: 60px;
+
+    &:last-child,
+    &:nth-last-child(2) {
+      margin-bottom: 0;
+    }
+
+    &--add {
+      padding-top: 135px;
+      margin-bottom: 0;
+      position: relative;
+
+      &::before,
+      &::after {
+        position: absolute;
+        content: "";
+        height: 432px;
+        width: 1px;
+        background-color: #e6e6e6;
+        bottom: -2px;
+        left: 0;
+      }
+
+      &::after {
+        left: unset;
+        right: 0;
+      }
+    }
+  }
+
+  .catalog__plus {
+    width: 60px;
+    height: 60px;
+    margin-bottom: 50px;
+  }
+
+  .catalog__title-add {
+    @include fonts(20px, 400, $gray4);
+    width: 140px;
+    line-height: 20px;
+    margin-bottom: 27px;
+
+    &::before,
+    &::after {
+      position: absolute;
+      content: "";
+      height: 1px;
+      width: 324px;
+      background-color: #e6e6e6;
+      bottom: -2px;
+      left: 0;
+    }
+
+    &::after {
+      bottom: unset;
+      top: 81px;
+    }
+  }
+
+  .catalog__text-add {
+    @include fonts(16px, 400, #000000, "Arial");
+    line-height: 18px;
+    margin-bottom: 85px;
+  }
+
+  .catalog__link-add {
+    width: 249px;
+  }
+}
+
+@media (min-width: 1152px) {
+  .catalog__list {
+    width: 1152px;
+  }
+}
+
+@media (min-width: $desktop) {
+  .catalog__list {
+    width: 1300px;
+    margin: 0 auto;
+  }
+
+  .catalog__wrapper {
+    padding-top: 86px;
+  }
+
+  .catalog__item {
+    width: 245px;
+    margin: 0 40px;
+    margin-bottom: 61px;
+
+    &:nth-last-child(4),
+    &:nth-last-child(3) {
+      margin-bottom: 0;
+    }
+  }
+
+  .catalog__title-add {
+    &::before,
+    &::after {
+      position: absolute;
+      content: "";
+      height: 1px;
+      width: 245px;
+      background-color: #e6e6e6;
+      bottom: -2px;
+      left: 0;
+    }
+  }
+
+  .catalog__link-add {
+    width: 169px;
+  }
+}

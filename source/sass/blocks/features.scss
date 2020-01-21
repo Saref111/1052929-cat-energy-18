@@ -19,9 +19,10 @@
 
 .features__item {
   position: relative;
+  margin-bottom: 26px;
 
-  &:not(:last-child) {
-    margin-bottom: 26px;
+  &:last-child {
+    margin-bottom: 0;
   }
 
   &::before {
@@ -163,5 +164,38 @@
     margin: 0;
     position: relative;
     z-index: 2;
+  }
+}
+
+@media (min-width: $desktop) {
+  .features__wrapper {
+    padding-top: 72px;
+    width: 84.72%;
+    max-width: unset;
+    padding-bottom: 0;
+  }
+
+  .features__item {
+    width: 245px;
+    margin-bottom: 0;
+    padding-top: 112px;
+    padding-bottom: 70px;
+
+    &:last-child,
+    &:nth-last-child(2) {
+      padding-bottom: 70px;
+    }
+
+    &::after {
+      right: -1px;
+    }
+
+    &:nth-child(1)::after {
+      right: 15px;
+    }
+
+    &:nth-child(2)::after {
+      right: 0;
+    }
   }
 }

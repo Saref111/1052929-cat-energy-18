@@ -17,3 +17,39 @@
   margin-bottom: 30px;
   padding-right: 30px;
 }
+
+@media (min-width: $tablet) {
+  .page-main__title {
+    @include fonts(60px);
+    line-height: 60px;
+    width: 708px;
+    padding-top: 57px;
+    margin-bottom: 56px;
+  }
+
+  .page-main__text {
+    font-size: 20px;
+    line-height: 30px;
+    width: 708px;
+    padding-left: 40px;
+    padding-right: 300px;
+    margin-bottom: 56px;
+  }
+}
+
+@media (min-width: $tablet) {
+  .page-main__title {
+    line-height: 60px;
+    width: 1220px;
+    margin: 0 auto;
+    margin-bottom: 57px;
+    padding-top: 75px;
+  }
+
+  .page-main__text {
+    width: 1220px;
+    padding: 0;
+    padding-right: 850px;
+    margin-bottom: 55px;
+  }
+}

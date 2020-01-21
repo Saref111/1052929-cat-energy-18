@@ -23,3 +23,10 @@
     margin: 0;
   }
 }
+
+@media (min-width: $desktop) {
+  .logo-header__wrapper {
+    width: 203px;
+    padding-top: 23px;
+  }
+}
