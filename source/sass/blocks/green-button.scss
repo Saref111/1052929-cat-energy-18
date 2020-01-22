@@ -6,6 +6,16 @@
   &--program {
     @include fonts(14px, 400, #ffffff);
   }
+
+  &:hover,
+  &:focus {
+    background-color: #5eaa2f;
+  }
+
+  &:active {
+    background-color: #5eaa2f;
+    color: rgba(255, 255, 255, 0.3);
+  }
 }
 
 @media (min-width: $tablet) {
