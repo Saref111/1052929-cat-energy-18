@@ -95,6 +95,27 @@
     }
   }
 
+  .contacts__map-wrapper {
+    background-image: url("../img/bg-map-tablet@1x.png");
+    background-size: 767px 400px;
+    background-repeat: no-repeat;
+    background-position: center 0;
+
+    @media (min-resolution: $retina-dppx) {
+      background-image: url("../img/bg-map-tablet@2x.png");
+      background-size: 767px 400px;
+      background-repeat: no-repeat;
+      background-position: center 0;
+    }
+
+    &:before {
+      width: 120px;
+      height: 120px;
+      left: 50%;
+      top: 207px;
+    }
+  }
+
   .contacts__map-wrapper iframe {
     height: 396px;
   }

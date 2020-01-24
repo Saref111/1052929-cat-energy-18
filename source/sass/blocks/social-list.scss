@@ -32,3 +32,45 @@
     opacity: 0.3;
   }
 }
+
+@media (min-width: $tablet) {
+  .social-list {
+    border: none;
+    width: 180px;
+    padding: 0;
+    padding-top: 15px;
+    padding-left: 38px;
+    padding-right: 5px;
+  }
+
+  .social-list__item {
+    width: 30px;
+
+    &--vk {
+      padding-top: 3px;
+
+      svg {
+        width: 30px;
+        height: 16px;
+      }
+    }
+
+    &--instagram {
+      padding-top: 3px;
+      margin-left: 5px;
+
+      svg {
+        width: 23px;
+        height: 23px;
+      }
+    }
+
+    &--facebook {
+      padding: 0;
+      svg {
+        width: 18px;
+        height: 28px;
+      }
+    }
+  }
+}

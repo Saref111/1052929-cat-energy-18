@@ -116,6 +116,13 @@
 
     &:last-child {
       margin-bottom: 0;
+      .mass-control__icon {
+        width: 268px;
+        height: 112px;
+        top: 36.3%;
+        left: unset;
+        right: 4%;
+      }
     }
 
     &::before {
@@ -125,6 +132,20 @@
       left: unset;
       right: 8.66%;
     }
+
+    &::after {
+      width: 0;
+      height: 0;
+      background-color: transparent;
+    }
+  }
+
+  .mass-control__icon {
+    width: 140px;
+    height: 195px;
+    top: 21.5%;
+    left: unset;
+    right: 13%;
   }
 
   .mass-control__title {
@@ -148,6 +169,26 @@
   .mass-control__link {
     @include fonts(20px);
     margin: 0;
+
+    svg {
+      left: unset;
+      right: -45px;
+      top: 9px;
+    }
+
+    &:hover,
+    &:focus {
+      .mass-control__arrow-verylong {
+        display: block;
+        left: unset;
+        right: -54px;
+        top: 9px;
+      }
+
+      .mass-control__arrow-long {
+        display: none;
+      }
+    }
   }
 }
 
