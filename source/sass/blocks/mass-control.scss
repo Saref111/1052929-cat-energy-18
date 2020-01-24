@@ -116,6 +116,7 @@
 
     &:last-child {
       margin-bottom: 0;
+
       .mass-control__icon {
         width: 268px;
         height: 112px;
@@ -211,6 +212,14 @@
 
     &:last-child {
       padding-bottom: 56px;
+
+      .mass-control__icon {
+        width: 134px;
+        height: 57px;
+        top: 68px;
+        right: unset;
+        left: 6%;
+      }
     }
 
     &::before {
@@ -219,6 +228,14 @@
       top: 48px;
       left: 9.2%;
     }
+  }
+
+  .mass-control__icon {
+    width: 70px;
+    height: 97px;
+    top: 41px;
+    right: unset;
+    left: 11.4%;
   }
 
   .mass-control__title {
@@ -240,5 +257,20 @@
 
   .mass-control__link {
     margin-left: 52px;
+
+    svg {
+      right: -47px;
+    }
+
+    &:hover,
+    &:focus {
+      .mass-control__arrow-verylong {
+        right: -56px;
+      }
+
+      .mass-control__arrow-long {
+        display: none;
+      }
+    }
   }
 }
