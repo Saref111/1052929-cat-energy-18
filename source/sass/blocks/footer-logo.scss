@@ -2,3 +2,14 @@
   width: 129px;
   height: 24px;
 }
+
+.footer-logo__link {
+  &:hover,
+  &:focus {
+    opacity: 0.8;
+  }
+
+  &:active {
+    opacity: 0.6;
+  }
+}

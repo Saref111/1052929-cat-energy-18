@@ -2,10 +2,33 @@
   @include list-reset;
   border-top: 1px solid #d9d9d9;
   border-bottom: 1px solid #d9d9d9;
+  display: flex;
+  justify-content: space-between;
+  padding: 0 73px;
+  padding-top: 20px;
+  padding-right: 70px;
 }
 
-.social-list svg {
-  position: absolute;
-  width: 0; //temporary
-  height: 0; //temporary
+.social-list__item {
+  width: 22px;
+
+  &--instagram {
+    padding-top: 2px;
+  }
+
+  &--facebook {
+    padding-top: 2px;
+  }
+}
+
+.social-list__link {
+  &:hover svg,
+  &:focus svg {
+    fill: #68b738;
+  }
+
+  &:active {
+    fill: #68b738;
+    opacity: 0.3;
+  }
 }

@@ -28,6 +28,37 @@
   width: 50%;
 }
 
+.contacts__map-wrapper {
+  position: relative;
+  background-color: #fdf7f0;
+  background-image: url("../img/bg-map-mobile@1x.png");
+  background-size: 320px 400px;
+  background-repeat: no-repeat;
+  background-position: center 0;
+
+  @media (min-resolution: $retina-dppx) {
+    background-image: url("../img/bg-map-mobile@2x.png");
+    background-size: 320px 400px;
+    background-repeat: no-repeat;
+    background-position: center 0;
+  }
+
+  &:before {
+    position: absolute;
+    content: "";
+    width: 52px;
+    height: 52px;
+    left: 50%;
+    top: 175px;
+    transform-origin: 50% 50%;
+    transform: translateX(-50%) translateY(-50%);
+    background-color: transparent;
+    background-image: url("../img/map-pin.png");
+    background-repeat: no-repeat;
+    background-size: contain;
+  }
+}
+
 .contacts__map-wrapper iframe {
   width: 100%;
   border: none;

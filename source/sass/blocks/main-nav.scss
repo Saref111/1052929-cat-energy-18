@@ -12,11 +12,35 @@
   position: absolute;
   background-color: transparent;
   border: none;
+  height: 18px;
+  right: 7.5%;
+  top: 21px;
+  width: 24px;
+
+  &--opened {
+    .main-nav__button-icon-open {
+      display: none;
+    }
+  }
+
+  &--closed {
+    .main-nav__button-icon-close {
+      display: none;
+    }
+  }
+
+  &--no-js {
+    display: none;
+  }
 }
 
 .main-nav__list {
   @include list-reset;
   border-top: 1px solid #e6e6e6;
+
+  &--hidden {
+    display: none;
+  }
 }
 
 .main-nav__item {
