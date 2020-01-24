@@ -21,6 +21,7 @@
   height: 30px;
   margin: 0 auto;
   margin-bottom: 22px;
+  fill: #e8e8e8;
 
   &--tablet {
     display: none;
@@ -58,6 +59,16 @@
   margin: 0 auto;
   padding-top: 10px;
   padding-bottom: 10px;
+
+  &:hover,
+  &:focus {
+    background-color: #ebebeb;
+  }
+
+  &:active {
+    background-color: #ebebeb;
+    color: rgba(0, 0, 0, 0.3);
+  }
 }
 
 @media (min-width: $tablet) {
@@ -162,7 +173,7 @@
   }
 
   .catalog__wrapper {
-    padding-top: 86px;
+    padding-top: 30px;
   }
 
   .catalog__item {
