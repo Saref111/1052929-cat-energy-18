@@ -24,6 +24,7 @@
     line-height: 60px;
     width: 708px;
     padding-top: 57px;
+    margin: 0 auto;
     margin-bottom: 56px;
   }
 
@@ -37,7 +38,7 @@
   }
 }
 
-@media (min-width: $tablet) {
+@media (min-width: $desktop) {
   .page-main__title {
     line-height: 60px;
     width: 1220px;

@@ -111,7 +111,7 @@
 @media (min-width: $desktop) {
   .cat-food {
     margin-top: -112px;
-    background-image: linear-gradient(to right, #ffffff 0, #ffffff 50%, $green-button 50%, $green-button 100%);
+    background-image: linear-gradient(to right, #ffffff 0, #ffffff 50%, #65a93c 50%, #65a93c 100%);
   }
 
   .cat-food__wrapper {
@@ -121,7 +121,7 @@
     margin: 0 auto;
     padding-left: 190px;
     padding-top: 221px;
-    background-image: url("../../img/index-background-desktop@1x.jpg");
+    background-image: url("../img/index-background-desktop@1x.jpg");
     background-repeat: no-repeat;
     background-size: 720px 696px;
     background-position: 100% 0;

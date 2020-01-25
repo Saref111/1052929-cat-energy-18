@@ -99,6 +99,18 @@
   }
 
   .catalog-card__term {
+    position: relative;
+
+    &::after {
+      position: absolute;
+      content: "";
+      width: 249px;
+      height: 1px;
+      background-color: #cdcdcd;
+      left: 0;
+      bottom: -7px;
+    }
+
     &:not(:last-child),
     &:not(:nth-last-child(2)) {
       margin-bottom: 16px;
@@ -114,7 +126,7 @@
 
   .catalog-card__link {
     display: block;
-    width: 100%;
+    width: auto;
     margin-left: 38px;
     margin-right: 37px;
   }
@@ -128,6 +140,14 @@
     &--small {
       margin-top: 34px;
       height: 174px;
+    }
+  }
+
+  .catalog-card__term {
+    &::after {
+      width: 169px;
+      left: 0;
+      bottom: -7px;
     }
   }
 
