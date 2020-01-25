@@ -41,6 +41,8 @@
   margin-top: 12px;
   margin-right: 5%;
 
+  vertical-align: top;
+
   &[for="weight"] {
     margin-right: 5.5%;
   }
@@ -106,6 +108,7 @@
   padding-top: 9px;
   padding-left: 14px;
   padding-bottom: 10px;
+  min-height: 50px;
 
   @include fonts(16px, 400, $gray4);
 

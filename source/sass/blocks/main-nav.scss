@@ -103,6 +103,10 @@
     &:not(:last-child) {
       margin-right: 8%;
     }
+
+    &:last-child {
+      margin-right: -10px;
+    }
   }
 
   .main-nav__link {
