@@ -114,8 +114,9 @@
       }
 
       &::after {
-        left: unset;
         right: 0;
+        left: unset;
+        left: 245px;
       }
     }
   }
