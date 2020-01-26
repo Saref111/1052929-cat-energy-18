@@ -37,6 +37,16 @@ gulp.task("css", function () {
     .pipe(gulp.dest("build/css"));
 });
 
+gulp.task("css-nomin", function () {
+  return gulp.src("source/sass/style.scss")
+    .pipe(plumber())
+    .pipe(sass())
+    .pipe(postcss([
+      autoprefixer()
+    ]))
+    .pipe(gulp.dest("build/css"));
+});
+
 gulp.task("server", function () {
   server.init({
     server: "build/",
@@ -87,6 +97,7 @@ gulp.task("copy", function () {
     "source/fonts/**/*.{woff,woff2}",
     "source/js/**/*",
     "source/img/*",
+    "!source/img/icon-*.svg",
     "source/bg/*",
     "source/*.ico*"
   ], {
@@ -116,7 +127,8 @@ gulp.task("build", gulp.series(
   "html",
   "css",
   "sprite",
-  "js"
+  "js",
+  "css-nomin"
 ));
 
 gulp.task("start", gulp.series("build", "server"));
